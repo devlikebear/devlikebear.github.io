@@ -19,7 +19,7 @@ function getSidebarArr() {
   var HomeFilelist = [];
   var filelist = fs.readdirSync(docsPath);
   filelist.forEach(function (file) {
-    if (file === ".vuepress") return;
+    if (file === ".vuepress" || file === "assets") return;
     var stat = fs.lstatSync(docsPath + "/" + file);
     if (stat.isDirectory()) {
       // directory
