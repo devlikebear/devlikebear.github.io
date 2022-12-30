@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Jekyll과 Github Page로 블로그 구축하기"
-date: 2022-12-29 17:57:12 +0900
 categories: jekyll github blog
 ---
 
