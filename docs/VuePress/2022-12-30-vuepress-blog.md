@@ -71,4 +71,4 @@ jobs:
 - ACCESS_TOKEN: [Github에서 Personal Access Token을 생성](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)합니다.
 - TARGET_BRANCH: gh-pages 브랜치를 미리 생성해 두고, 다음과 같이 Github Repository Pages 설정을 해야 합니다.
 
-<img src="./assets/github-pages-setting.png">
+<img src="../assets/github-pages-setting.png">
