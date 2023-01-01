@@ -30,7 +30,7 @@ go get github.com/go-redis/redis/v9
 
 먼저 테스트코드를 작성합니다.
 
-```golang
+```go
 package redisproxy_test
 
 import (
@@ -95,7 +95,7 @@ Get()과 Set() 기능을 테스트하는 코드를 작성합니다.
 
 redisproxy.Proxy는 다음과 같이 Redis 인터페이스를 정의합니다.
 
-```golang
+```go
 package redisproxy
 
 import (
@@ -130,7 +130,7 @@ type Proxy interface {
 
 Proxy 인터페이스를 구현하는 코드를 다음과 같이 작성합니다.
 
-```golang
+```go
 package redisproxy
 
 import (
@@ -206,7 +206,7 @@ func (clt proxy) Del(ctx context.Context, keys ...string) (int, error) {
 
 Redis 서버에 연결할 때 사용할 설정을 다루는 Config도 go-redis를 노출하지 않기 위해 다음과 같이 Config 구조체를 만들어 정의합니다.
 
-```golang
+```go
 package redisproxy
 
 // Config Redis 서버 연결 설정
